@@ -2,7 +2,7 @@
 #include <HTTPClient.h>
 #include <WiFi.h>
 
-const char *firmwareVersion = "1.0.0";
+const char *firmwareVersion = "1.0.1";
 const char *githubApiEndpoint = "https://api.github.com/repos/FitroxElectronics/autoUpdate/releases/latest";
 const char *downloadUrlBase = "https://github.com/FitroxElectronics/autoUpdate/releases/download/";
 
@@ -10,7 +10,7 @@ const char *ssid = "FIRST Galaxy A51";
 const char *password = "first25331990";
 const int led_pin = 2;
 unsigned long start_time;
-long delay_time = 2000;
+long delay_time = 500;
 
 bool isNewVersionAvailable(const char *currentVersion, const char *latestVersion)
 {
